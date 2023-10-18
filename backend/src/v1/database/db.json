@@ -1,0 +1,49 @@
+{
+  "customers": [
+    {
+      "name": "Edificio Morros Zoe",
+      "nit": "90098876541",
+      "address": "Manzanillo del Mar - Zona Norte",
+      "phone": "+573175182687",
+      "city": "Cartagena de Indias",
+      "state": "Bolivar",
+      "country": "Colombia"
+    },
+    {
+      "name": "Edificio El Cedro",
+      "nit": "9007865432",
+      "address": "Calle 153 # 13-58",
+      "phone": "+573175182688",
+      "city": "Bogota",
+      "state": "Bogota",
+      "country": "Colombia"
+    },
+    {
+      "name": "Edificio Tupai",
+      "nit": "90087654976",
+      "address": "Calle 127D # 19-18",
+      "phone": "+573175182689",
+      "city": "Cali",
+      "state": "Valle del Cauca",
+      "country": "Colombia"
+    },
+    {
+      "name": "La Marina",
+      "nit": "90098876541",
+      "phone": "+573175182687",
+      "address": "Manzanillo del Mar - Zona Norte",
+      "city": "Cartagena de Indias",
+      "state": "Bolivar",
+      "country": "Colombia"
+    },
+    {
+      "name": "La Casa",
+      "nit": "90098876541",
+      "phone": "+573175182687",
+      "address": "Carrera 73 # 11A-68",
+      "city": "Cali",
+      "state": "Valle del Cauca",
+      "country": "Colombia"
+    }
+  ]
+}
