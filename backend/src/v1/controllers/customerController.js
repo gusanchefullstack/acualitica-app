@@ -2,12 +2,16 @@ import customerService from "../services/customerService.js";
 
 const getAllCustomers = (req, res) => {
   const allCustomers = customerService.getAllCustomers();
-  res.send({ status: "Ok", data: allCustomers });
+  res.send({ status: "Ok", items: allCustomers.length, data: allCustomers });
 };
 
 const getOneCustomer = (req, res) => {
-  const customer = customerService.getOneCustomer();
-  res.send("Get one customer from controller");
+  const { customerId } = req.params;
+  if (!customerId) {
+    return;
+  }
+  const customer = customerService.getOneCustomer(customerId);
+  res.send({ status: "Ok", data: customer });
 };
 
 const createNewCustomer = (req, res) => {
@@ -37,13 +41,22 @@ const createNewCustomer = (req, res) => {
 };
 
 const updateOneCustomer = (req, res) => {
-  const updatedCustomer = customerService.updateOneCustomer();
-  res.send("Update one customer from controller");
+  const { customerId } = req.params;
+  const { body } = req;
+  if (!customerId) {
+    return;
+  }
+  const updatedCustomer = customerService.updateOneCustomer(customerId, body);
+  res.send({ status: "Ok", data: updatedCustomer });
 };
 
 const deleteOneCustomer = (req, res) => {
-  const deletedCustomer = customerService.deleteOneCustomer();
-  res.send("Delete one customer from controller");
+  const { customerId } = req.params;
+  if (!customerId) {
+    return;
+  }
+  const deletedCustomer = customerService.deleteOneCustomer(customerId);
+  res.send({ status: "Ok", data: deletedCustomer});
 };
 
 export default {

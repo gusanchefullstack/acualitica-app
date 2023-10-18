@@ -2,48 +2,63 @@
   "customers": [
     {
       "name": "Edificio Morros Zoe",
-      "nit": "90098876541",
-      "address": "Manzanillo del Mar - Zona Norte",
+      "nit": "999999999",
       "phone": "+573175182687",
+      "address": "Manzanillo del Mar - Zona Norte",
       "city": "Cartagena de Indias",
       "state": "Bolivar",
-      "country": "Colombia"
-    },
-    {
-      "name": "Edificio El Cedro",
-      "nit": "9007865432",
-      "address": "Calle 153 # 13-58",
-      "phone": "+573175182688",
-      "city": "Bogota",
-      "state": "Bogota",
-      "country": "Colombia"
+      "country": "Colombia",
+      "id": "61224767-feed-4ddf-bc33-85e6e5c90eb0",
+      "createdAt": "10/18/2023, 11:15:19 PM",
+      "updatedAt": "10/18/2023, 11:15:19 PM"
     },
     {
       "name": "Edificio Tupai",
-      "nit": "90087654976",
-      "address": "Calle 127D # 19-18",
-      "phone": "+573175182689",
-      "city": "Cali",
-      "state": "Valle del Cauca",
-      "country": "Colombia"
-    },
-    {
-      "name": "La Marina",
-      "nit": "90098876541",
+      "nit": "888888888",
       "phone": "+573175182687",
-      "address": "Manzanillo del Mar - Zona Norte",
-      "city": "Cartagena de Indias",
-      "state": "Bolivar",
-      "country": "Colombia"
+      "address": "Calle 127D # 19-18",
+      "city": "Bogota",
+      "state": "Bogota",
+      "country": "Colombia",
+      "id": "c5e3581f-937b-4c76-80dd-dd5ca6914f10",
+      "createdAt": "10/18/2023, 11:20:18 PM",
+      "updatedAt": "10/18/2023, 11:20:19 PM"
     },
     {
-      "name": "La Casa",
-      "nit": "90098876541",
+      "name": "Edificio El Cedro",
+      "nit": "777777777",
+      "phone": "+573175182687",
+      "address": "Calle 127D # 19-18",
+      "city": "Bogota",
+      "state": "Bogota",
+      "country": "Colombia",
+      "id": "e5d4caca-cf8e-4df7-9056-3e2ee5484a6f",
+      "createdAt": "10/18/2023, 11:20:41 PM",
+      "updatedAt": "10/18/2023, 11:20:41 PM"
+    },
+    {
+      "name": "Edificio Casa Papas Capri",
+      "nit": "555555555",
       "phone": "+573175182687",
       "address": "Carrera 73 # 11A-68",
       "city": "Cali",
       "state": "Valle del Cauca",
-      "country": "Colombia"
+      "country": "Colombia",
+      "id": "5862dc5c-a614-4b66-9554-11fba8e7ad5e",
+      "createdAt": "10/18/2023, 11:21:12 PM",
+      "updatedAt": "10/18/2023, 11:28:12 PM"
+    },
+    {
+      "name": "Edificio Morros IO",
+      "nit": "333333333",
+      "phone": "+573175182687",
+      "address": "Manzanillo del Mar",
+      "city": "Cartagena",
+      "state": "Bolivar",
+      "country": "Colombia",
+      "id": "68614e69-42dd-4f5c-8158-5cfa7515a4e1",
+      "createdAt": "10/18/2023, 11:27:45 PM",
+      "updatedAt": "10/18/2023, 11:27:45 PM"
     }
   ]
 }
