@@ -1,0 +1,19 @@
+{
+  "name": "acqualitica-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gusanchefullstack/acualitica-app.git"
+  },
+  "author": "Gustavo Sanchez <gustavosanchezgalarza@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gusanchefullstack/acualitica-app/issues"
+  },
+  "homepage": "https://github.com/gusanchefullstack/acualitica-app#readme"
+}
