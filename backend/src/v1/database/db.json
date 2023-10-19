@@ -59,6 +59,18 @@
       "id": "68614e69-42dd-4f5c-8158-5cfa7515a4e1",
       "createdAt": "10/18/2023, 11:27:45 PM",
       "updatedAt": "10/18/2023, 11:27:45 PM"
+    },
+    {
+      "name": "Edificio Morros Kai",
+      "nit": "222222222",
+      "phone": "+573175182687",
+      "address": "Manzanillo del Mar",
+      "city": "Cartagena",
+      "state": "Bolivar",
+      "country": "Colombia",
+      "id": "48c3b50e-485b-4aa7-8e0a-23962b377505",
+      "createdAt": "10/19/2023, 12:40:04 AM",
+      "updatedAt": "10/19/2023, 12:40:04 AM"
     }
   ]
 }
