@@ -71,6 +71,18 @@
       "id": "48c3b50e-485b-4aa7-8e0a-23962b377505",
       "createdAt": "10/19/2023, 12:40:04 AM",
       "updatedAt": "10/19/2023, 12:40:04 AM"
+    },
+    {
+      "name": "Morros 7",
+      "nit": "444444444",
+      "phone": "+573175182687",
+      "address": "Manzanillo del Mar",
+      "city": "Cartagena",
+      "state": "Bolivar",
+      "country": "Colombia",
+      "id": "1a4e5003-6c14-4bd6-8552-bd2ff8026047",
+      "createdAt": "10/24/2023, 11:18:22 PM",
+      "updatedAt": "10/24/2023, 11:19:14 PM"
     }
   ]
 }

@@ -74,7 +74,10 @@ const deleteOneCustomer = (customerId) => {
       (customer) => customer.id === customerId
     );
     if (indexForDelete === -1) {
-      return;
+      throw {
+        status: 400,
+        message: `Can't find customer with the id '${customerId}'`,
+      };
     }
     const customerToDelete = DB.customers[indexForDelete];
     DB.customers.splice(indexForDelete, 1);
