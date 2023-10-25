@@ -1,32 +1,40 @@
 import DB from "./db.json" assert { type: "json" };
 import saveToDatabase from "./utilities.js";
+import { PrismaClient } from "@prisma/client";
 
-const getAllCustomers = () => {
+const prisma = new PrismaClient();
+
+const getAllCustomers = async () => {
   try {
-    return DB.customers;
+    const allCustomers = await prisma.customer.findMany();
   } catch (error) {
     throw { status: error?.status || 500, message: error?.message || error };
   }
 };
 
-const getOneCustomer = (customerId) => {
+const getOneCustomer = async (customerId) => {
   try {
-    const customer = DB.customers.find(
-      (customer) => customer.id === customerId
-    );
-    if (!customer) {
-      throw {
-        status: 400,
-        message: `Can't find customer with the id '${customerId}'`,
-      };
-    }
+    // const customer = DB.customers.find(
+    //   (customer) => customer.id === customerId
+    // );
+    const customer = await prisma.customer.findUnique({
+      where: {
+        id: customerId,
+      },
+    });
+    // if (!customer) {
+    //   throw {
+    //     status: 400,
+    //     message: `Can't find customer with the id '${customerId}'`,
+    //   };
+    // }
     return customer;
   } catch (error) {
     throw { status: error?.status || 500, message: error?.message || error };
   }
 };
 
-const updateOneCustomer = (customerId, changes) => {
+const updateOneCustomer = async (customerId, changes) => {
   try {
     const indexForUpdate = DB.customers.findIndex(
       (customer) => customer.id === customerId
@@ -50,7 +58,7 @@ const updateOneCustomer = (customerId, changes) => {
   }
 };
 
-const createNewCustomer = (newCustomer) => {
+const createNewCustomer = async (newCustomer) => {
   const isAlreadyAdded =
     DB.customers.findIndex((customer) => customer.nit === newCustomer.nit) > -1;
   if (isAlreadyAdded) {
@@ -68,7 +76,7 @@ const createNewCustomer = (newCustomer) => {
   }
 };
 
-const deleteOneCustomer = (customerId) => {
+const deleteOneCustomer = async (customerId) => {
   try {
     const indexForDelete = DB.customers.findIndex(
       (customer) => customer.id === customerId
