@@ -9,7 +9,8 @@ app.get("/", (req, res) => {
   res.send("Hello Acqualitica App");
 });
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
+app.use(express.json())
 app.use("/api/v1", apiv1router);
 
 app.listen(EXPRESS_PORT, () => {

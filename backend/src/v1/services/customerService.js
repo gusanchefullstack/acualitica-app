@@ -1,51 +1,44 @@
 import Customer from "../database/customers.js";
-import { v4 as uuidv4 } from "uuid";
 
-const getAllCustomers = () => {
+const getAllCustomers = async () => {
   try {
-    const allCustomers = Customer.getAllCustomers();
+    const allCustomers = await Customer.getAllCustomers();
     return allCustomers;
   } catch (error) {
     throw error;
   }
 };
 
-const getOneCustomer = (customerId) => {
+const getOneCustomer = async (customerId) => {
   try {
-    const customer = Customer.getOneCustomer(customerId);
+    const customer = await Customer.getOneCustomer(customerId);
     return customer;
   } catch (error) {
     throw error;
   }
 };
 
-const createNewCustomer = (customer) => {
-  const customerToInsert = {
-    ...customer,
-    id: uuidv4(),
-    createdAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
-    updatedAt: new Date().toLocaleString("en-US", { timeZone: "UTC" }),
-  };
+const createNewCustomer = async (customer) => {
   try {
-    const createdCustomer = Customer.createNewCustomer(customerToInsert);
+    const createdCustomer = await Customer.createNewCustomer(customer);
     return createdCustomer;
   } catch (error) {
     throw error;
   }
 };
 
-const updateOneCustomer = (customerId, changes) => {
+const updateOneCustomer = async (customerId, changes) => {
   try {
-    const customerUpdated = Customer.updateOneCustomer(customerId, changes);
+    const customerUpdated = await Customer.updateOneCustomer(customerId, changes);
     return customerUpdated;
   } catch (error) {
     throw error;
   }
 };
 
-const deleteOneCustomer = (customerId) => {
+const deleteOneCustomer = async (customerId) => {
   try {
-    const deletedCustomer = Customer.deleteOneCustomer(customerId);
+    const deletedCustomer = await Customer.deleteOneCustomer(customerId);
     return deletedCustomer;
   } catch (error) {
     throw error;
