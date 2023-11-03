@@ -17,6 +17,17 @@ const getOneCustomer = async (customerId) => {
       where: {
         id: customerId,
       },
+      include: {
+        sites: {
+          select: {
+            name: true,
+            address: true,
+            city: true,
+            state: true,
+            country: true,
+          },
+        },
+      },
     });
     return customer;
   } catch (error) {
